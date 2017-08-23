@@ -5,3 +5,9 @@ jdk:
   - oraclejdk8
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+notifications:
+  email:
+    recipients:
+      - oaleite@icloud.com
+    on_success: never # default: change
+    on_failure: always # default: always
